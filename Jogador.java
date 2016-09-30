@@ -1,15 +1,12 @@
 package blackjack;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Jogador {
 
 	private int pontos;
-	private ArrayList<Carta> cartas = new ArrayList<Carta>();
-
-	public void somaPontos() {
-		this.setPontos(this.getPontos() + Baralho.getCartaAleatoria());
-	}
+	private List<Carta> cartas = new LinkedList<>();
 
 	public int getPontos() {
 		return pontos;
