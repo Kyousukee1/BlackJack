@@ -1,19 +1,17 @@
 package blackjack;
 
-public class Naipe {
+public enum Naipe {
 
-	public Naipe(String nome) {
-		this.nome = nome;
+	COPAS("Copas"), ESPADAS("Espadas"), OUROS("Ouros"), PAUS("Paus");
+
+	private final String nomeNaipe;
+
+	private Naipe(String nomeNaipe) {
+		this.nomeNaipe = nomeNaipe;
 	}
 
-	private String nome;
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	public String getNomeNaipe() {
+		return nomeNaipe;
 	}
 
 }
