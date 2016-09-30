@@ -10,20 +10,14 @@ public class Carta {
 		this.face = face;
 	}
 
-	public Naipe getNaipe() {
-		return naipe;
+	public String getNomeNaipe() {
+		// Encapsulando o comportamento do naipe
+		return this.naipe.getNomeNaipe();
 	}
 
-	public void setNaipe(Naipe naipe) {
-		this.naipe = naipe;
-	}
-
-	public Face getFace() {
-		return face;
-	}
-
-	public void setFace(Face face) {
-		this.face = face;
+	public int getValorFace() {
+		// Encapsulando o comportamento do face
+		return this.face.getValorFace();
 	}
 
 }
